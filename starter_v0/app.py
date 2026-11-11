@@ -180,11 +180,15 @@ st.markdown(
 
       /* CHAT INPUT BAR - Sáng, rõ ràng, phong cách Gemini */
       [data-testid="stChatInput"] {
-          background: #f8fafd !important;
+          background: #ffffff !important;
           border: 1px solid #c4c7c5 !important;
           border-radius: 28px !important;
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
           padding: 0.4rem 0.8rem !important;
+      }
+      [data-testid="stChatInput"] > div {
+          background: #ffffff !important;
+          color: #1f1f1f !important;
       }
       [data-testid="stChatInput"]:focus-within {
           background: #ffffff !important;
@@ -194,6 +198,7 @@ st.markdown(
       [data-testid="stChatInput"] textarea {
           color: #1f1f1f !important;
           background: transparent !important;
+          caret-color: #1f1f1f !important;
           font-size: 1.05rem !important;
           line-height: 1.5 !important;
       }
